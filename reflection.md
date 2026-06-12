@@ -44,6 +44,7 @@ Revisited the UI to try to recreate the bug and verify correct behavior
   and what it showed you about your code.
 I ran the tests given for check_guess. One thing was that it had to be edited to properly unpack the return type of tuple, one thing would be to consider moving away from tuple return type though I'm unsure what's the Python standard for this.
 - Did AI help you design or understand any tests? How?
+Not really since I decided on what tests to run, but it was useful for telling me how to run the tests since I was doing `pytest test` instead of `python -m pytest tests` for the correct python paths.
 
 
 ---
@@ -51,12 +52,15 @@ I ran the tests given for check_guess. One thing was that it had to be edited to
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+It reruns the entire script from top to bottom and things such as attempts left will be displayed before it's decremented properly. So we can use session state to keep memory on attempts left to overcome this issue.
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+I'm not sure if I find it necessary to restart the session for each bug since some of them were pretty small ones but I'll definitely keep that in mind for larger code changes.
 - What is one thing you would do differently next time you work with AI on a coding task?
+Adding comment for FIXME for the ai to find is an interesting strategy and I might try that out again in the future.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+I thought we could vibe more but I think we have to try to limit one change per prompt instead of just telling the AI to find and fix things.
