@@ -44,16 +44,16 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 
 ```
 # Paste your pytest output here, e.g.:
-python -m pytest tests                                                                                                        
+python -m pytest
 ======================================================================================= test session starts ========================================================================================
 platform darwin -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0
 rootdir: /Users/yingkai/code/ai110-module1show-gameglitchinvestigator-starter
 plugins: anyio-4.13.0
-collected 3 items                                                                                                                                                                                  
+collected 6 items                                                                                                                                                                                  
 
-tests/test_game_logic.py ...                                                                                                                                                                 [100%]
+tests/test_game_logic.py ......                                                                                                                                                              [100%]
 
-======================================================================================== 3 passed in 0.01s ===
+======================================================================================== 6 passed in 0.01s ==========
 ```
 
 ## 🚀 Stretch Features
